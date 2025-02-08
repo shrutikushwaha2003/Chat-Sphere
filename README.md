@@ -28,7 +28,7 @@ Frontend: HTML, CSS, JavaScript (optional if applicable)
 
 Clone the repository:
 
-git clone https://github.com/your-username/ChatSphere.git
+
 cd ChatSphere
 
 Install dependencies:
