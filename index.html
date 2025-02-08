@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Chat</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for the send button icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="app-wrapper">
+        <!-- Sidebar for user list -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h3>Users Online</h3>
+            </div>
+            <ul id="user-list">
+                <!-- Dynamically added user list -->
+            </ul>
+        </div>
+
+        <!-- Main Chat Area -->
+        <div class="chat-container">
+            <!-- Chat Header -->
+            <div class="chat-header">
+                <h2>Real-Time Chat</h2>
+            </div>
+
+            <!-- Chat User Info (Centered after chat header) -->
+            <div class="chat-user-info">
+                <p>Connected as: <span id="user-name"></span></p>
+            </div>
+
+            <!-- Chat Body: Where messages are shown -->
+            <div class="chat-body" id="chat-box">
+                <!-- Messages will be dynamically added here -->
+            </div>
+
+            <!-- Chat Footer: Message input & send button -->
+            <div class="chat-footer">
+                <input type="text" id="message-input" placeholder="Type a message..." />
+                <button id="send-button">
+                    <i class="fa fa-paper-plane"></i> Send
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Socket.IO -->
+    <script src="https://cdn.socket.io/4.5.1/socket.io.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
